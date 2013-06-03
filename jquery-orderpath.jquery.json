@@ -1,0 +1,27 @@
+{
+  "name": "jquery-orderpath",
+  "title": "jQuery Orderpath",
+  "description": "This is a bundle of jquery plugins for RealPlayer orderpath usage.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/deanyan/jquery-orderpath",
+  "author": {
+    "name": "Dean Yan",
+    "email": "yanhuiyi@gmail.com",
+    "url": "deanyan.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/deanyan/jquery-orderpath.git"
+  },
+  "bugs": "https://github.com/deanyan/jquery-orderpath/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/deanyan/jquery-orderpath/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "1.4.3"
+  },
+  "keywords": []
+}
