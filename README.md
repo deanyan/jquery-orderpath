@@ -47,7 +47,6 @@ In this way, the error message show within parent p element, given you have foll
 	<textarea data-required="required textarea without value"></textarea>
 </p>
 
-
 $('form').orderpath('validate', { callback: function(input) {
         	input.css('border', '1px solid red');
 	}
