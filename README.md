@@ -26,12 +26,9 @@ jQuery(function($) {
 </script>
 ```
 
-## Documentation
-_(Coming soon)_
-
 ## Examples
 The custom error display function, you should define when you call the validate function:
-```html
+```javascript
 $('form').orderpath('validate', { callback: function(input) {
 		var errorMessage = input.data('required');
 		data = $('<span class="message" />').text(errorMessage);
@@ -57,5 +54,3 @@ $('form').orderpath('validate', { callback: function(input) {
 	  });
 });
 ```
-## Release History
-_(Nothing yet)_
