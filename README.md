@@ -16,14 +16,11 @@ In your web page:
 <script>
 jQuery(function($) {
 	$('form').orderpath('validate', {callback: function(input) {
-														 var errorMessage = input.data('required');
-		
-														 data = $('<span class="message" />').text(errorMessage);
-														 
-														 input.data('message', data);
-														 
-														 input.parent('p').append(data);
-													},
+			var errorMessage = input.data('required');
+			data = $('<span class="message" />').text(errorMessage);
+			input.data('message', data);
+			input.parent('p').append(data);
+		},
 	});
 });
 </script>
@@ -36,33 +33,28 @@ _(Coming soon)_
 The custom error display function, you should define when you call the validate function:
 ```html
 $('form').orderpath('validate', { callback: function(input) {
-														 var errorMessage = input.data('required');
-		
-														 data = $('<span class="message" />').text(errorMessage);
-														 
-														 input.data('message', data);
-														 
-														 input.parent('p').append(data);
-										   },
+		var errorMessage = input.data('required');
+		data = $('<span class="message" />').text(errorMessage);
+		input.data('message', data);
+		input.parent('p').append(data);
+	},
 });
 ```
 
 In this way, the error message show within parent p element, given you have following HTML structures:
 ```html
-			  <p>
-                     <input data-required="required text" />
-              </p>
-              <p>
-                     <textarea data-required="required textarea without value">
-                            
-                     </textarea>
-              </p>
+	<p>
+                <input data-required="required text" />
+	</p>
+	<p>
+		<textarea data-required="required textarea without value"></textarea>
+	</p>
 
 
 $('form').orderpath('validate', { callback: function(input) {
-                                                    input.css('border', '1px solid red');
-                                                }
-								});
+                input.css('border', '1px solid red');
+	        }
+	  });
 });
 ```
 ## Release History
