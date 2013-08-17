@@ -1,4 +1,4 @@
-# jQuery Orderpath
+# jQuery Orderpath Plugin
 
 This is a bundle of jquery plugins for RealPlayer orderpath usage.
 
