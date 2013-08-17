@@ -40,17 +40,16 @@ $('form').orderpath('validate', { callback: function(input) {
 
 In this way, the error message show within parent p element, given you have following HTML structures:
 ```html
-	<p>
-                <input data-required="required text" />
-	</p>
-	<p>
-		<textarea data-required="required textarea without value"></textarea>
-	</p>
+<p>
+	<input data-required="required text" />
+</p>
+<p>
+	<textarea data-required="required textarea without value"></textarea>
+</p>
 
 
 $('form').orderpath('validate', { callback: function(input) {
-                input.css('border', '1px solid red');
-	        }
-	  });
+        	input.css('border', '1px solid red');
+	}
 });
 ```
